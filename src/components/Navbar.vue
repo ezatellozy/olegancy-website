@@ -1,8 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
       <div class="links d-flex justify-content-between">
-        <a class="navbar-brand" href="#">{{ $t('navs.brand') }}</a>
+        <a class="navbar-brand" href="#">
+          <img src="@/assets/images/logo.png" alt="logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,22 +22,47 @@
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link" to="/">Home</router-link>
-              <!-- <a class="nav-link active" aria-current="page" href="/">Home</a> -->
+              <router-link class="nav-link" to="/">
+                {{ $t('nav.home') }}
+              </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/other">Link</router-link>
+              <router-link class="nav-link" to="/aboutUs">
+                {{ $t('nav.aboutUs') }}
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/policies">
+                {{ $t('nav.policies') }}
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/lawFirms">
+                {{ $t('nav.lawFirms') }}
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/pricing">
+                {{ $t('nav.pricing') }}
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/legalForums">
+                {{ $t('nav.legalForums') }}
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/bookLibrary">
+                {{ $t('nav.bookLibrary') }}
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/contactUs">
+                {{ $t('nav.contactUs') }}
+              </router-link>
             </li>
           </ul>
         </div>
-      </div>
-      <a class="btn rounded-pill main-btn text-white" href="#">Login</a>
-      <div class="lang">
-        <b-form-select
-          v-model="lang"
-          @change="changeLang($event)"
-          :options="locales"
-        ></b-form-select>
       </div>
     </div>
   </nav>
@@ -64,14 +91,35 @@ export default {
 </script>
 
 <style lang="scss">
-.router-link-active,
-.router-link-exact-active {
-  color: #fff !important;
+.nav-link {
+  color: #555 !important;
+  font-size: 20px;
+  &.router-link-active,
+  &.router-link-exact-active {
+    color: #303f9f !important;
+    font-weight: bold;
+  }
+  @media (max-width: 1200px) {
+    font-size: 18px !important;
+  }
 }
-
 .navbar {
   .navbar-brand {
-    font-family: 'Cairo';
+    img {
+      max-height: 50px;
+      @media (max-width: 768px) {
+        max-height: 40px;
+      }
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    & > span {
+      background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 20, 63, 0.9%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e');
+    }
+    &:focus {
+      color: #fff !important;
+    }
   }
   .links {
     flex: 1;

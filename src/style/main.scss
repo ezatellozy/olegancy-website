@@ -1,0 +1,1109 @@
+body {
+  font-family: 'Cairo', sans-serif;
+}
+.index {
+  background-color: #f5f5f5;
+}
+.btn,
+a,
+img,
+svg {
+  transition: all 0.4s ease-in-out;
+}
+button {
+  cursor: pointer;
+}
+.btn:active {
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none !important;
+}
+
+.btn:focus,
+a:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0px transparent !important;
+}
+.primary-color {
+  color: #303f9f;
+}
+.bg-primary-color {
+  background-color: #303f9f;
+}
+.primary-color-hover:hover {
+  color: #303f9f;
+}
+.secondary-color {
+  color: #212121;
+}
+.bg-secondary-color {
+  background-color: #212121;
+}
+.secondary-color-hover:hover {
+  color: #212121;
+}
+.btn {
+  background-color: #303f9f !important;
+  color: white !important;
+  border-radius: 0 !important;
+  border-color: transparent !important;
+  min-width: 180px !important;
+  margin-top: 20px;
+  padding: 10px !important;
+}
+.btn:hover {
+  color: white;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+li {
+  text-decoration: none;
+}
+// // .inner-header {
+// //   background: url(../images/intro.jpg) fixed center no-repeat;
+// //   background-size: cover;
+// //   height: 250px;
+// //   padding-top: 100px;
+// // }
+// .breadcrumb {
+//   background-color: transparent;
+// }
+// .breadcrumb-item {
+//   font-size: 17px;
+// }
+// .breadcrumb-item a {
+//   color: white;
+// }
+// .breadcrumb-item.active {
+//   color: white;
+// }
+// .breadcrumb-item + .breadcrumb-item::before {
+//   color: white;
+// }
+// .breadcrumb-title {
+//   font-size: 40px;
+// }
+// .pagination {
+//   padding: 0;
+// }
+// .page-link {
+//   color: #303f9f;
+// }
+// .page-item:hover .page-link,
+// .page-item:active .page-link {
+//   color: white;
+//   background-color: #303f9f;
+// }
+// .image,
+// figure {
+//   width: 100%;
+//   text-align: center;
+//   overflow: hidden;
+// }
+.image img,
+figure img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.6s ease-in-out;
+}
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #ddd;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
+// .warning {
+//   color: red;
+// }
+// .error .form-control {
+//   border-color: red !important;
+//   border: solid 1px red !important;
+// }
+// .footer-content .warning {
+//   color: white;
+// }
+// .footer-content .error .form-control {
+//   background-color: rgba(231, 76, 60, 0.5);
+// }
+// .title {
+//   width: 75%;
+//   margin: 10px auto 30px;
+// }
+// .title h2::after {
+//   content: '';
+//   display: block;
+//   height: 4px;
+//   width: 80px;
+//   background-color: #303f9f;
+//   margin: 15px auto;
+// }
+
+// /*************** Index ****************/
+// /** Intro **/
+// // .intro {
+// //   background: url(../images/intro.jpg) no-repeat center;
+// //   background-size: cover;
+// //   height: 580px;
+// //   position: relative;
+// // }
+// .intro .search {
+//   position: absolute;
+//   top: 30%;
+//   right: 20%;
+//   left: 20%;
+// }
+// .intro .search form {
+//   padding: 35px 35px 50px;
+//   background-color: rgba(0, 0, 0, 0.4);
+// }
+// .intro .search h2 {
+//   font-size: 40px;
+// }
+// .form-control,
+// .bootstrap-select > .dropdown-toggle {
+//   background-color: #fcfcfc;
+//   color: grey;
+//   border: solid 1px #e0e0e0;
+//   border-radius: 0;
+//   padding: 9px 10px;
+// }
+// select.form-control:not([size]):not([multiple]) {
+//   padding: 10px;
+//   height: 45px;
+//   font-size: 13px;
+// }
+// .search .btn {
+//   padding: 11px;
+// }
+// .intro .form-control,
+// .intro .bootstrap-select > .dropdown-toggle {
+//   background-color: #fcfcfc;
+//   color: grey;
+//   border: solid 1px #e0e0e0;
+//   border-radius: 0;
+//   padding: 12px 10px;
+// }
+// .intro select.form-control:not([size]):not([multiple]) {
+//   padding: 10px;
+//   font-size: 14px;
+//   height: 47px;
+// }
+// .intro .bs-searchbox .form-control {
+//   padding: 5px;
+// }
+// .intro .dropdown-item.active,
+// .intro .dropdown-item:active {
+//   background-color: #303f9f;
+// }
+// .intro .search .btn {
+//   padding: 12px;
+// }
+// /** Intro **/
+
+// /** Lawyers **/
+// .nav-pills .nav-item {
+//   margin: 0 10px 20px;
+// }
+// .nav-pills .nav-link {
+//   border-radius: 0;
+//   padding: 10px 35px;
+//   border: solid 1px #303f9f;
+// }
+// .nav-pills .nav-link.active,
+// .show > .nav-pills .nav-link {
+//   background-color: #303f9f;
+// }
+// .lawyers .lawyer {
+//   border-bottom: solid 2px transparent;
+//   transition: all 0.4s ease-in-out;
+// }
+// .lawyers .lawyer figure {
+//   height: 230px;
+//   margin-bottom: 0;
+//   background-color: #f8f9fa;
+// }
+// .lawyers .lawyer .info ul li {
+//   margin-bottom: 7px;
+// }
+// .lawyers .lawyer:hover {
+//   border-bottom: solid 2px #303f9f;
+// }
+// .lawyers .lawyer:hover figure img {
+//   transform: scale(1.1) rotate(3deg);
+// }
+// /** Lawyers **/
+
+// /** Testimonials **/
+// // .testimonials {
+// //   background: url(../images/bg1.jpg) no-repeat center fixed;
+// //   background-size: cover;
+// // }
+// .testimonials .overlay {
+//   padding: 50px 0;
+// }
+// .owl-demo .item {
+//   margin: 40px 20px 30px;
+// }
+// .owl-demo .item img {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+// }
+// .testimonials .item figure {
+//   width: 120px;
+//   height: 120px;
+// }
+// .testimonials .item .content {
+//   width: 75%;
+// }
+// /** Testimonials **/
+
+// /** Partners **/
+// .partners-owl-demo .item {
+//   margin: 20px 10px 10px;
+//   text-align: center;
+// }
+// /** Partners **/
+
+// /** Contact **/
+// // .contact {
+// //   background: url(../images/bg2.jpg) no-repeat center fixed;
+// //   background-size: cover;
+// // }
+// .contact .map iframe {
+//   width: 100%;
+//   height: 580px;
+//   margin-bottom: -6px;
+// }
+// .contact ul.info li {
+//   display: block;
+//   margin-bottom: 12px;
+//   clear: both;
+//   display: flex;
+//   align-items: center;
+// }
+// .contact ul.info li .icon {
+//   width: 50px;
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .contact ul.info li svg {
+//   font-size: 20px;
+// }
+// .contact ul.info li span {
+//   width: 80%;
+// }
+// .contact form textarea {
+//   height: 140px;
+// }
+// .contact .form-control {
+//   background-color: white;
+//   border: 0;
+//   box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+//   padding: 10px;
+// }
+// /** Contact **/
+
+// /** Modal **/
+// .modal {
+//   padding-top: 20px;
+// }
+// .modal-header {
+//   border-bottom: 0;
+//   padding: 10px;
+// }
+// .modal-footer {
+//   border-top: 0;
+// }
+// .modal .or,
+// .register-page .or {
+//   background-color: white;
+//   color: #303f9f;
+//   font-size: 14px;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   text-align: center;
+//   margin: 10px auto;
+//   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+//   padding-top: 5px;
+// }
+// .modal form {
+//   width: 75%;
+//   margin: auto;
+// }
+// .modal .form-control {
+//   height: 50px;
+// }
+// .modal .links {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .modal textarea {
+//   height: 150px !important;
+// }
+// .message-modal .form-control {
+//   font-size: 14px;
+//   height: 43px;
+// }
+// .message-modal form {
+//   width: 85%;
+// }
+// /** Modal **/
+
+// /*************** Index ****************/
+
+// /*************** Register ****************/
+// .register-first .second a,
+// .register-first .third a {
+//   cursor: not-allowed;
+// }
+// .register-first .steps-form .steps-row .first .btn-circle {
+//   background-color: #303f9f !important;
+//   color: white !important;
+// }
+// .steps-form .steps-row .second .btn-circle:hover,
+// .steps-form .steps-row .third .btn-circle:hover {
+//   background-color: white !important;
+//   color: #303f9f !important;
+// }
+
+// .register-second .second a,
+// .register-second .third a {
+//   cursor: not-allowed;
+// }
+// .register-second .steps-form .steps-row .second .btn-circle {
+//   background-color: #303f9f !important;
+//   color: white !important;
+// }
+// .steps-form .steps-row .first .btn-circle:hover,
+// .steps-form .steps-row .third .btn-circle:hover {
+//   background-color: white !important;
+//   color: #303f9f !important;
+// }
+
+// .register-third .second a,
+// .register-third .third a {
+//   cursor: not-allowed;
+// }
+// .register-third .steps-form .steps-row .third .btn-circle {
+//   background-color: #303f9f !important;
+//   color: white !important;
+// }
+// .steps-form .steps-row .second .btn-circle:hover,
+// .steps-form .steps-row .first .btn-circle:hover {
+//   background-color: white !important;
+//   color: #303f9f !important;
+// }
+
+// .steps-form {
+//   width: 2px;
+//   height: 436px;
+//   position: relative;
+// }
+// .steps-form svg {
+//   font-size: 35px;
+//   transition: all 0s ease-in-out;
+// }
+// form .setup-content .form-control {
+//   border: solid 1px #ddd;
+// }
+// form .setup-content .bootstrap-select > .dropdown-toggle {
+//   border: 0;
+//   padding: 0;
+// }
+// form .setup-content .bootstrap-select > .dropdown-toggle:focus {
+//   outline: 0 !important;
+//   outline-offset: 0 !important;
+// }
+// .steps-form .steps-row {
+//   display: -webkit-box;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-align: center;
+//   -webkit-align-items: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//   -webkit-flex-direction: column;
+//   -ms-flex-direction: column;
+//   flex-direction: column;
+// }
+// .steps-form .steps-row:before {
+//   top: 14px;
+//   bottom: 0;
+//   position: absolute;
+//   content: '';
+//   width: 2px;
+//   height: 100%;
+//   background-color: #7283a7;
+// }
+// .steps-form .steps-row .steps-step {
+//   height: 218px;
+//   display: -webkit-box;
+//   display: -webkit-flex;
+//   display: -ms-flexbox;
+//   display: flex;
+//   text-align: center;
+//   position: relative;
+// }
+// .steps-form .steps-row .steps-step.no-height {
+//   height: 50px;
+// }
+// .steps-form .steps-row .steps-step p {
+//   margin-top: 0.5rem;
+// }
+// .steps-form .steps-row .steps-step button[disabled] {
+//   opacity: 1 !important;
+//   filter: alpha(opacity=100) !important;
+// }
+// .steps-form .steps-row .steps-step .btn {
+//   background-color: transparent;
+//   color: #000;
+//   border-radius: 50% !important;
+//   border-color: #303f9f;
+//   min-width: 10px;
+//   padding: 10px;
+//   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+// }
+// .steps-form .steps-row .steps-step .btn:active {
+//   border-color: transparent;
+//   border: 0;
+// }
+// .steps-form .steps-row .steps-step .btn-circle {
+//   width: 60px;
+//   height: 60px;
+//   background-color: white !important;
+//   color: #59698d !important;
+//   margin-top: -22px;
+// }
+// .register .success .icon {
+//   width: 80px;
+//   height: 80px;
+//   border-radius: 50%;
+//   margin: 40px auto;
+//   background-color: #303f9f;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .register .success .icon svg {
+//   font-size: 30px;
+//   color: white;
+// }
+// [type='file'] {
+//   filter: alpha(opacity=0);
+//   opacity: 0;
+//   position: absolute;
+// }
+// [type='file'] + label {
+//   left: 0;
+//   top: 0.5em;
+//   color: #303f9f;
+//   cursor: pointer;
+//   position: relative;
+//   border-radius: 3px;
+//   padding: 10px;
+//   width: 100%;
+//   font-size: 17px;
+//   transition: all 0.4s ease-in-out;
+// }
+// [type='file'] + label:before {
+//   content: '\f093';
+//   font-family: FontAwesome;
+//   color: #303f9f;
+//   margin-left: 5px;
+//   transition: all 0.4s ease-in-out;
+// }
+// /*************** Register ****************/
+
+// /*************** Page ****************/
+// .page ul li {
+//   list-style-type: disc;
+// }
+// .page img {
+//   max-width: 100%;
+// }
+// /*************** Page ****************/
+
+// /*************** Pricing ****************/
+// .pricing .business .box {
+//   border: solid 1px #303f9f;
+//   transition: all 0.4s ease-in-out;
+//   transform: scale(1.05);
+// }
+// .pricing .business .box .title::after {
+//   content: '';
+//   display: block;
+//   width: 80px;
+//   height: 4px;
+//   background-color: #303f9f;
+//   margin: 15px auto 0;
+// }
+// .pricing .business .box:nth-child(2) {
+//   background-color: #303f9f;
+//   color: white;
+//   transform: scale(1);
+// }
+// .pricing .business .box:nth-child(2) .btn {
+//   background-color: white;
+//   color: #303f9f;
+// }
+// .pricing .business .box:nth-child(2) .title::after {
+//   background-color: white;
+// }
+// .pricing .individual .price {
+//   width: 100px;
+//   height: 100px;
+//   border-radius: 50%;
+//   border: solid 1px #303f9f;
+//   margin: 20px auto;
+//   text-align: center;
+//   font-size: 30px;
+//   padding-top: 20px;
+// }
+// .pricing .individual .box .content {
+//   border: solid 2px #f8f9fa;
+//   transition: all 0.4s ease-in-out;
+// }
+// .pricing .individual .box:hover .content {
+//   border: solid 2px #303f9f;
+// }
+// .pricing .box ul.details {
+//   padding: 10px 0;
+// }
+// .pricing .box ul.details li {
+//   margin-bottom: 10px;
+//   display: block;
+//   position: relative;
+// }
+// .pricing .box ul.details li::before {
+//   content: '\f00c';
+//   font-family: FontAwesome;
+//   color: #303f9f;
+// }
+// .pricing .business .box:nth-child(2) ul.details li::before {
+//   color: white;
+// }
+// /* .pricing .individual .box:nth-child(2) , .pricing .individual .box:nth-child(4){
+// 		background-color: #303f9f;
+// 		color: white;
+// 	}
+// 	.pricing .individual .box:nth-child(2) .price , .pricing .individual .box:nth-child(4) .price{
+// 		border: solid 1px white;
+// 	}
+// 	.pricing .individual .box:nth-child(2) .btn , .pricing .individual .box:nth-child(4) .btn{
+// 		background-color: white;
+// 	} */
+
+// /*************** Pricing ****************/
+
+// /*************** Contact ****************/
+// .contact-page ul.social li svg {
+//   color: #303f9f;
+//   font-size: 20px;
+// }
+// .contact-page .address ul li {
+//   margin-bottom: 7px;
+//   font-size: 15px;
+// }
+// .contact-page .address ul li svg {
+//   color: #303f9f;
+// }
+// .contact-page form textarea {
+//   height: 150px;
+// }
+// .contact-page .map iframe {
+//   width: 100%;
+//   height: 350px;
+// }
+// /*************** Contact ****************/
+
+// /************** Archive Books **************/
+// .archive-books figure {
+//   height: 375px;
+//   position: relative;
+// }
+// .archive-books figure .overlay {
+//   position: absolute;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.7);
+//   overflow: hidden;
+//   width: 0;
+//   height: 100%;
+//   transition: 0.5s ease;
+// }
+// .archive-books figure:hover .overlay {
+//   width: 100%;
+// }
+// .archive-books figure .overlay .text {
+//   color: white;
+//   font-size: 20px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   white-space: nowrap;
+// }
+// .archive-books figure .overlay .text h4 {
+//   white-space: pre-wrap;
+//   line-height: 32px;
+// }
+// .archive-books figure .overlay .text svg {
+//   font-size: 35px;
+//   color: white;
+//   transition: all 0.4s ease-in-out;
+// }
+// .archive-books figure .overlay .text svg:hover {
+//   color: #303f9f;
+// }
+// /************** Archive Books **************/
+
+// /************** Single-Book **************/
+// .single-book .links a.read {
+//   background-color: white;
+//   border: solid 2px #303f9f;
+//   color: #303f9f;
+// }
+// /************** Single-Book **************/
+
+// /************** Legal-Forum **************/
+// .forums .forum-title {
+//   background-color: #999;
+// }
+// .forums .sub-forum {
+//   margin-bottom: 5px;
+//   padding-bottom: 15px;
+//   padding-top: 20px;
+// }
+// .forums .sub-forum:nth-child(odd) {
+//   background-color: #f8f9fa;
+// }
+// .forums .sub-forum svg {
+//   color: #303f9f;
+// }
+// /************** Legal-Forum **************/
+
+// /************** Cat-Forum **************/
+// ul.article-info li {
+//   display: inline;
+//   font-size: 15px;
+// }
+// ul.article-info li svg {
+//   color: #868e96 !important;
+// }
+// ul.article-info li .like svg {
+//   color: green !important;
+// }
+// ul.article-info li .dislike svg {
+//   color: red !important;
+// }
+// /************** Cat-Forum **************/
+
+// /************** Comments **************/
+// .comments .comment .user-img {
+//   width: 60px;
+//   height: 60px;
+// }
+// .comments .comment .txt {
+//   width: 85%;
+// }
+// .comments .comment .txt p {
+//   font-size: 15px;
+// }
+// .write-comment form {
+//   width: 80%;
+// }
+// .write-comment form textarea {
+//   height: 150px;
+// }
+// /************** Comments **************/
+
+// /************** Add-Article **************/
+// .add-article form textarea {
+//   height: 130px;
+// }
+// /************** Add-Article **************/
+
+// /************** Lawer-details **************/
+// .lawyer-details .profile-sec {
+//   min-height: 500px;
+// }
+// .lawyer-details .profile {
+//   position: relative;
+// }
+// .lawyer-details .profile .profile-info {
+//   position: absolute;
+//   top: 85%;
+//   right: 5%;
+//   left: 5%;
+//   background-color: #f5f5f5;
+//   z-index: 3;
+//   min-height: 175px;
+// }
+// .lawyer-details .cover-img {
+//   height: 315px;
+// }
+// .lawyer-details .profile-img {
+//   position: absolute;
+//   margin-top: -25px;
+//   right: 15%;
+//   width: 80%;
+//   height: 210px;
+//   border: solid 5px #f5f5f5;
+// }
+// .lawyer-details ul.social li a svg {
+//   color: #303f9f;
+// }
+// .lawyer-details .profile-info .text {
+//   width: 70%;
+// }
+// .lawyer-details .profile-info .links {
+//   width: 30%;
+//   padding-left: 20px;
+// }
+// .lawyer-details .profile-info .links .btn {
+//   min-width: 150px;
+// }
+// .lawyer-details .content {
+//   padding-right: 55px;
+//   padding-left: 55px;
+// }
+// .lawyer-details .video iframe {
+//   height: 350px;
+//   width: 100%;
+// }
+// .lawyer-details .lawyers .lawyer figure {
+//   width: 35%;
+//   height: 191px;
+// }
+// .lawyer-details .lawyers .lawyer .info {
+//   width: 65%;
+// }
+// .lawyer-details .lawyers .lawyer .info p {
+//   font-size: 13px;
+//   max-height: 71px;
+//   overflow: hidden;
+//   margin-bottom: 0;
+// }
+// .lawyer-details .lawyers .lawyer:hover {
+//   border-bottom: solid 2px transparent;
+// }
+// .rating {
+//   border: none;
+// }
+// .rating > input {
+//   display: none;
+// }
+// .rating > label:before {
+//   margin: 2px 5px;
+//   font-size: 22px;
+//   font-family: FontAwesome;
+//   display: inline-block;
+//   content: '\f005';
+// }
+// .rating > .half:before {
+//   content: '\f089';
+//   position: absolute;
+// }
+// .rating > label {
+//   color: #ddd;
+//   float: left;
+// }
+// /***** CSS Magic to Highlight Stars on Hover *****/
+// .rating > input:checked ~ label, /* show gold star when clicked */
+// 	.rating:not(:checked) > label:hover, /* hover current star */
+// 	.rating:not(:checked) > label:hover ~ label {
+//   color: #303f9f;
+// } /* hover previous stars in list */
+
+// .rating > input:checked + label:hover, /* hover current star when changing rating */
+// 	.rating > input:checked ~ label:hover,
+// 	.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+// 	.rating > input:checked ~ label:hover ~ label {
+//   color: #303f9f;
+// }
+
+// /************** Lawer-details **************/
+
+// /************** Sidebar **************/
+// .sidebar .add-article {
+//   padding: 20px 10px;
+//   font-size: 20px;
+// }
+// .side-banner img {
+//   max-width: 100%;
+// }
+// .side-topics ul li svg {
+//   color: #303f9f;
+// }
+// .side-topics ul li {
+//   border-bottom: solid 1px #f5f5f5;
+//   padding-bottom: 15px;
+//   margin-bottom: 15px;
+// }
+// .side-topics ul li .num span {
+//   padding: 2px 10px;
+//   position: relative;
+// }
+// .side-topics ul li .num span::after {
+//   content: '';
+//   position: absolute;
+//   top: 23%;
+//   width: 0;
+//   height: 0;
+//   border-top: 10px solid transparent;
+//   border-bottom: 10px solid transparent;
+//   clear: both;
+// }
+// /************** Sidebar **************/
+
+// /************* Responsive *************/
+// @media (max-width: 1024px) {
+//   .menu .nav-item {
+//     padding-right: 2px;
+//     padding-left: 2px;
+//   }
+//   .intro .search {
+//     right: 10%;
+//     left: 10%;
+//   }
+//   .lawyers .lawyer figure {
+//     height: 195px;
+//   }
+//   .testimonials .item figure {
+//     width: 100px;
+//     height: 100px;
+//   }
+//   .archive-books figure {
+//     height: 310px;
+//   }
+//   .archive-books figure .overlay {
+//     width: 100%;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .testimonials .item .content {
+//     width: 80%;
+//   }
+//   .intro .search {
+//     right: 5%;
+//     left: 5%;
+//   }
+//   .contact-page .address {
+//     margin-bottom: 20px;
+//   }
+//   .archive-books figure {
+//     height: 400px;
+//   }
+//   .sidebar {
+//     margin-top: 30px;
+//   }
+//   .lawyer-details .cover-img {
+//     height: 230px;
+//   }
+//   .lawyer-details .profile .profile-info {
+//     position: relative;
+//     background-color: white;
+//     min-height: 175px;
+//     right: 0;
+//     left: 0;
+//   }
+//   .lawyer-details .profile-img {
+//     position: relative;
+//     margin-top: -85px;
+//     border: 0;
+//     right: 0;
+//     width: 100%;
+//   }
+//   .lawyer-details .profile-info .links {
+//     padding-left: 0;
+//   }
+//   .lawyer-details .content {
+//     padding-right: initial;
+//     padding-left: initial;
+//     margin-top: 30px;
+//   }
+// }
+// @media (max-width: 640px) {
+//   .title {
+//     width: 100%;
+//   }
+//   .intro .search {
+//     top: 23%;
+//   }
+//   .nav-pills .nav-item {
+//     margin: 0 5px 15px;
+//   }
+//   .lawyers .lawyer figure {
+//     height: 205px;
+//   }
+//   .testimonials .item .content {
+//     width: 78%;
+//   }
+//   .pricing .business .box {
+//     transform: scale(1);
+//   }
+//   .contact-page .map iframe {
+//     height: 250px;
+//   }
+//   .archive-books figure {
+//     height: 340px;
+//   }
+//   .single-book .links {
+//     margin-bottom: 30px;
+//   }
+//   .forum,
+//   .cat-forum {
+//     margin-left: 15px !important;
+//     margin-right: 15px !important;
+//   }
+//   .forums .item {
+//     border-right: 0 !important;
+//     margin-bottom: 20px;
+//   }
+//   .write-comment form {
+//     width: 100%;
+//   }
+//   .lawyer-details .cover-img {
+//     height: 180px;
+//   }
+//   .lawyer-details .profile-img {
+//     height: 170px;
+//   }
+//   .lawyer-details .profile-info .text {
+//     width: 100%;
+//     float: none !important;
+//     text-align: center;
+//   }
+//   .lawyer-details .profile-info .links {
+//     width: 100%;
+//     float: none !important;
+//     text-align: center !important;
+//   }
+//   .lawyer-details .profile-info .links .btn {
+//     display: inline;
+//   }
+//   .rating {
+//     margin: 10px;
+//   }
+//   .rating > label {
+//     float: none !important;
+//   }
+// }
+// @media (max-width: 480px) {
+//   .top-header ul.social,
+//   .top-header ul.login {
+//     float: none !important;
+//     text-align: center;
+//     margin-bottom: 5px;
+//   }
+//   .logo {
+//     max-height: 40px;
+//   }
+//   .intro .search {
+//     top: 13%;
+//   }
+//   .lawyers .lawyer figure {
+//     height: 220px;
+//   }
+//   .testimonials .item figure {
+//     width: 90px;
+//     height: 90px;
+//   }
+//   .contact .map iframe {
+//     width: 100%;
+//     height: 310px;
+//     margin-bottom: 0;
+//   }
+//   .modal form {
+//     width: 80%;
+//   }
+//   .archive-books figure {
+//     height: 400px;
+//   }
+// }
+// @media (max-width: 360px) {
+//   .intro .search {
+//     top: 10%;
+//     right: 0;
+//     left: 0;
+//   }
+//   .intro .search h2 {
+//     font-size: 30px;
+//   }
+//   .nav-pills .nav-item {
+//     margin: 0 4px 15px;
+//   }
+//   .owl-demo .item {
+//     text-align: center;
+//   }
+//   .testimonials .item figure {
+//     width: 100px;
+//     height: 100px;
+//     float: none !important;
+//     margin: 10px auto;
+//   }
+//   .testimonials .item .content {
+//     width: 100%;
+//   }
+//   .modal form {
+//     width: 100%;
+//   }
+//   .pricing .business .box {
+//     padding: 20px !important;
+//   }
+//   .comments .comment .txt {
+//     width: 80%;
+//   }
+//   .lawyer-details .profile-img {
+//     border: 0;
+//     right: 0;
+//     left: auto;
+//     text-align: center;
+//     width: 55%;
+//     margin: -122px auto 5px;
+//     height: 144px;
+//   }
+//   .lawyer-details .profile-info .links .btn {
+//     display: block;
+//   }
+//   .lawyer-details .video iframe {
+//     height: 220px;
+//   }
+//   .lawyer-details .lawyers .lawyer figure,
+//   .lawyer-details .lawyers .lawyer .info {
+//     width: 100%;
+//     float: none !important;
+//   }
+// }
+// /************* Responsive *************/

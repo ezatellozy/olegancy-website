@@ -9,13 +9,21 @@
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^3.0.0-5",
     "@popperjs/core": "^2.11.4",
     "bootstrap": "^5.1.3",
     "bootstrap-vue-3": "^0.1.9",
     "js-cookie": "^3.0.1",
     "vue": "^3.2.13",
+    "vue-form-wizard": "^0.8.4",
     "vue-i18n": "^9.1.0",
     "vue-router": "^4.0.3",
+    "vue3-carousel": "^0.1.38",
+    "vue3-google-map": "^0.10.0",
     "vuex": "^4.0.0"
   },
   "devDependencies": {

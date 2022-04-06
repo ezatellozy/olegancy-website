@@ -1,6 +1,18 @@
 {
-  "navs": {
-    "brand": "اوليجانسي"
+  "locales": {
+    "ar": "English",
+    "en": "عربي"
+  },
+  "nav": {
+    "brand": "Olegancy",
+    "home": "Home",
+    "contactUs": "Contact us",
+    "policies": "Policies",
+    "lawFirms": "Law firms",
+    "pricing": "Pricing",
+    "legalForums": "Legal forums",
+    "bookLibrary": "Book library",
+    "aboutUs": "About us"
   },
   "message": "hello i18n !!"
 }
