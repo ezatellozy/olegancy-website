@@ -1,3 +1,5 @@
+@import './animate.scss';
+@import './my-style.scss';
 body {
   font-family: 'Cairo', sans-serif;
 }
@@ -16,9 +18,6 @@ button {
 .btn:active {
   outline: none;
   border: none;
-}
-a {
-  text-decoration: none !important;
 }
 
 .btn:focus,
@@ -54,7 +53,7 @@ a:focus {
   padding: 10px !important;
 }
 .btn:hover {
-  color: white;
+  color: white !important;
 }
 .overlay {
   width: 100%;
@@ -70,6 +69,77 @@ ul {
 li {
   text-decoration: none;
 }
+
+// Contact Modal
+.modal {
+  padding-top: 20px;
+  .modal-header {
+    border-bottom: 0;
+    padding: 10px;
+  }
+  .modal-body {
+    .logo {
+      max-height: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  .modal-footer {
+    border-top: 0;
+  }
+
+  form {
+    width: 75%;
+    margin: auto;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+  .or {
+    background-color: white;
+    color: #303f9f;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    padding-top: 5px;
+  }
+  .form-control {
+    height: 50px;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+  textarea {
+    height: 150px !important;
+  }
+  .message-modal .form-control {
+    font-size: 14px;
+    height: 43px;
+  }
+  .message-modal form {
+    width: 85%;
+  }
+}
+
+// Main Title
+.title {
+  width: 75%;
+  margin: 10px auto 30px;
+
+  h2::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 80px;
+    background-color: #303f9f;
+    margin: 15px auto;
+  }
+}
+
 // // .inner-header {
 // //   background: url(../images/intro.jpg) fixed center no-repeat;
 // //   background-size: cover;
@@ -149,145 +219,6 @@ figure img {
 // .footer-content .error .form-control {
 //   background-color: rgba(231, 76, 60, 0.5);
 // }
-// .title {
-//   width: 75%;
-//   margin: 10px auto 30px;
-// }
-// .title h2::after {
-//   content: '';
-//   display: block;
-//   height: 4px;
-//   width: 80px;
-//   background-color: #303f9f;
-//   margin: 15px auto;
-// }
-
-// /*************** Index ****************/
-// /** Intro **/
-// // .intro {
-// //   background: url(../images/intro.jpg) no-repeat center;
-// //   background-size: cover;
-// //   height: 580px;
-// //   position: relative;
-// // }
-// .intro .search {
-//   position: absolute;
-//   top: 30%;
-//   right: 20%;
-//   left: 20%;
-// }
-// .intro .search form {
-//   padding: 35px 35px 50px;
-//   background-color: rgba(0, 0, 0, 0.4);
-// }
-// .intro .search h2 {
-//   font-size: 40px;
-// }
-// .form-control,
-// .bootstrap-select > .dropdown-toggle {
-//   background-color: #fcfcfc;
-//   color: grey;
-//   border: solid 1px #e0e0e0;
-//   border-radius: 0;
-//   padding: 9px 10px;
-// }
-// select.form-control:not([size]):not([multiple]) {
-//   padding: 10px;
-//   height: 45px;
-//   font-size: 13px;
-// }
-// .search .btn {
-//   padding: 11px;
-// }
-// .intro .form-control,
-// .intro .bootstrap-select > .dropdown-toggle {
-//   background-color: #fcfcfc;
-//   color: grey;
-//   border: solid 1px #e0e0e0;
-//   border-radius: 0;
-//   padding: 12px 10px;
-// }
-// .intro select.form-control:not([size]):not([multiple]) {
-//   padding: 10px;
-//   font-size: 14px;
-//   height: 47px;
-// }
-// .intro .bs-searchbox .form-control {
-//   padding: 5px;
-// }
-// .intro .dropdown-item.active,
-// .intro .dropdown-item:active {
-//   background-color: #303f9f;
-// }
-// .intro .search .btn {
-//   padding: 12px;
-// }
-// /** Intro **/
-
-// /** Lawyers **/
-// .nav-pills .nav-item {
-//   margin: 0 10px 20px;
-// }
-// .nav-pills .nav-link {
-//   border-radius: 0;
-//   padding: 10px 35px;
-//   border: solid 1px #303f9f;
-// }
-// .nav-pills .nav-link.active,
-// .show > .nav-pills .nav-link {
-//   background-color: #303f9f;
-// }
-// .lawyers .lawyer {
-//   border-bottom: solid 2px transparent;
-//   transition: all 0.4s ease-in-out;
-// }
-// .lawyers .lawyer figure {
-//   height: 230px;
-//   margin-bottom: 0;
-//   background-color: #f8f9fa;
-// }
-// .lawyers .lawyer .info ul li {
-//   margin-bottom: 7px;
-// }
-// .lawyers .lawyer:hover {
-//   border-bottom: solid 2px #303f9f;
-// }
-// .lawyers .lawyer:hover figure img {
-//   transform: scale(1.1) rotate(3deg);
-// }
-// /** Lawyers **/
-
-// /** Testimonials **/
-// // .testimonials {
-// //   background: url(../images/bg1.jpg) no-repeat center fixed;
-// //   background-size: cover;
-// // }
-// .testimonials .overlay {
-//   padding: 50px 0;
-// }
-// .owl-demo .item {
-//   margin: 40px 20px 30px;
-// }
-// .owl-demo .item img {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-// }
-// .testimonials .item figure {
-//   width: 120px;
-//   height: 120px;
-// }
-// .testimonials .item .content {
-//   width: 75%;
-// }
-// /** Testimonials **/
-
-// /** Partners **/
-// .partners-owl-demo .item {
-//   margin: 20px 10px 10px;
-//   text-align: center;
-// }
-// /** Partners **/
 
 // /** Contact **/
 // // .contact {
