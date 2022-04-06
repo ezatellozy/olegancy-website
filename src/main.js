@@ -5,12 +5,12 @@ import router from './router'
 import store from './store'
 import '@/style/main.scss'
 
-import { extend } from 'vee-validate'
-import * as rules from 'vee-validate/dist/rules'
-import {
-  ValidationObserver,
-  ValidationProvider,
-} from 'vee-validate/dist/vee-validate.full.esm'
+// import { extend } from 'vee-validate'
+// import * as rules from 'vee-validate/dist/rules'
+// import {
+//   ValidationObserver,
+//   ValidationProvider,
+// } from 'vee-validate/dist/vee-validate.full.esm'
 // import $ from 'jquery'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -20,9 +20,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import 'bootstrap'
 
-Object.keys(rules).forEach((rule) => {
-  extend(rule, rules[rule])
-})
+// Object.keys(rules).forEach((rule) => {
+//   extend(rule, rules[rule])
+// })
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
@@ -38,8 +38,8 @@ import i18n from './i18n'
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
-app.component('validation-provider', ValidationProvider)
-app.component('validation-observer', ValidationObserver)
+// app.component('validation-provider', ValidationProvider)
+// app.component('validation-observer', ValidationObserver)
 
 app.use(i18n)
 

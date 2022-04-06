@@ -57,7 +57,7 @@
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/contactUs">
+              <router-link class="nav-link" :to="{ name: 'ContactUs' }">
                 {{ $t('nav.contactUs') }}
               </router-link>
             </li>
