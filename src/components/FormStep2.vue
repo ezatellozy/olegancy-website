@@ -4,76 +4,90 @@
       <h3 class="font-weight-bold pl-0 my-4">
         <strong>Account Data</strong>
       </h3>
-      <form>
-        <div class="form-group">
-          <label for="FormControlSelect">Account Type</label>
-          <select class="form-control" id="FormControlSelect">
-            <option>Lawyer</option>
-            <option>Customer</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <div class="col-6 m-b-15">
-            <label for="phone">Your phone</label>
-            <input id="phone" type="text" class="form-control" />
+      <b-form @submit.prevent>
+        <b-row>
+          <b-col cols="12" sm="6" md="12" class="m-b-15">
+            <b-form-group>
+              <!-- <label for="name">Your Name</label> -->
+              <b-form-input
+                v-model="phone"
+                type="phone"
+                placeholder="Your phone"
+              ></b-form-input>
+            </b-form-group>
+          </b-col>
+          <b-col cols="12" sm="6" md="12" class="m-b-15">
+            <b-form-group>
+              <!-- <label for="name">Your Name</label> -->
+              <b-form-input
+                v-model="age"
+                type="number"
+                placeholder="Age"
+              ></b-form-input>
+            </b-form-group>
+          </b-col>
+          <b-col cols="12" sm="6" md="12" class="m-b-15">
+            <b-form-group>
+              <!-- <label for="name">Your Name</label> -->
+              <b-form-input
+                v-model="password"
+                type="password"
+                placeholder="Your Password"
+              ></b-form-input>
+            </b-form-group>
+          </b-col>
+          <b-col cols="12" sm="6" md="12" class="m-b-15">
+            <b-form-group>
+              <!-- <label for="name">Your Name</label> -->
+              <b-form-input
+                v-model="confirmPassword"
+                type="password"
+                placeholder="Confirm Password"
+              ></b-form-input>
+            </b-form-group>
+          </b-col>
+          <b-col cols="12" sm="6" md="12" class="m-b-15">
+            <b-form-group>
+              <b-form-radio v-model="gender" name="gender" value="male">
+                Male
+              </b-form-radio>
+              <b-form-radio v-model="gender" name="gender" value="female">
+                Female
+              </b-form-radio>
+            </b-form-group>
+          </b-col>
+          <span class="text-muted f-s-14">
+            By clicking Join now, you agree to hifriends's User Agreement,
+            Privacy Policy, and Cookie Policy.
+          </span>
+          <div>
+            <button
+              class="btn float-right m-t-10"
+              type="button"
+              @click="submit"
+            >
+              Join Now
+            </button>
           </div>
-          <div class="col-6 m-b-15">
-            <label for="age">Age</label>
-            <input id="age" type="text" class="form-control" />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-6 m-b-15">
-            <label for="pass">Your Password</label>
-            <input id="pass" type="text" class="form-control" />
-          </div>
-          <div class="col-6 m-b-15">
-            <label for="confirm-pass">Confirm Password</label>
-            <input id="confirm-pass" type="text" class="form-control" />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-4 m-b-15 form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="exampleRadios"
-              id="exampleRadios1"
-              value="option1"
-              checked
-            />
-            <label class="form-check-label" for="exampleRadios1">
-              Male
-            </label>
-          </div>
-          <div class="col-4 m-b-15 form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="exampleRadios"
-              id="exampleRadios2"
-              value="option2"
-            />
-            <label class="form-check-label" for="exampleRadios2">
-              Female
-            </label>
-          </div>
-        </div>
-
-        <span class="text-muted f-s-14">
-          By clicking Join now, you agree to hifriends's User Agreement, Privacy
-          Policy, and Cookie Policy.
-        </span>
-        <button class="btn float-right m-t-10" type="button">
-          Join Now
-        </button>
-      </form>
+        </b-row>
+      </b-form>
     </b-col>
   </b-row>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    data() {
+      return {
+        gender: 'male',
+      }
+    },
+    submit() {
+      this.$emit('goStep', 2)
+    },
+  },
+}
 </script>
 
 <style></style>

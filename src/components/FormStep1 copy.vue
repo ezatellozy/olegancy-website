@@ -39,7 +39,7 @@
       <h3 class="bold pl-0 my-4">
         <strong>Basic Information</strong>
       </h3>
-      <b-form @submit.prevent>
+      <b-form @submit="onSubmit">
         <b-row>
           <b-col cols="12" sm="6" md="12" class="m-b-15">
             <b-form-group>
@@ -75,10 +75,7 @@
             </b-form-group>
           </b-col>
           <b-col cols="12" sm="6" md="12" class="m-b-15">
-            <!-- <b-form-group>
-              <input @change="getFile($event)" type="file" id="photo" />
-              <label for="photo">Upload Your Profile picture</label>
-            </b-form-group> -->
+            <div class="form-group"></div>
           </b-col>
         </b-row>
 
@@ -86,7 +83,7 @@
           By clicking Join now, you agree to hifriends's User Agreement, Privacy
           Policy, and Cookie Policy.
         </span>
-        <button class="btn float-right m-t-10" type="button" @click="submit">
+        <button class="btn float-right m-t-10" type="button">
           Next
         </button>
       </b-form>
@@ -95,7 +92,6 @@
 </template>
 
 <script>
-// import { ref } from 'vue'
 export default {
   data() {
     return {
@@ -105,11 +101,6 @@ export default {
         { value: '2', text: 'Customer' },
       ],
     }
-  },
-  methods: {
-    submit() {
-      this.$emit('goStep', 1)
-    },
   },
 }
 </script>
