@@ -75,10 +75,17 @@
             </b-form-group>
           </b-col>
           <b-col cols="12" sm="6" md="12" class="m-b-15">
-            <!-- <b-form-group>
-              <input @change="getFile($event)" type="file" id="photo" />
-              <label for="photo">Upload Your Profile picture</label>
-            </b-form-group> -->
+            <div class="mb-3">
+              <b-form-group>
+                <input
+                  id="photo"
+                  @change="getFile($event)"
+                  type="file"
+                  class="form-control"
+                  placeholder="Upload Your Profile picture"
+                />
+              </b-form-group>
+            </div>
           </b-col>
         </b-row>
 
@@ -95,10 +102,10 @@
 </template>
 
 <script>
-// import { ref } from 'vue'
 export default {
   data() {
     return {
+      file: null,
       accountType: 1,
       accountTypeOptions: [
         { value: '1', text: 'Lawyer' },
@@ -110,11 +117,19 @@ export default {
     submit() {
       this.$emit('goStep', 1)
     },
+    getFile(e) {
+      this.file = e.target.files[0]
+      console.log(this.file)
+    },
   },
 }
 </script>
 
-<style scpoed>
+<style>
+input[type='file'] {
+  opacity: 1;
+  position: relative;
+}
 .btn {
   /* background-color: red !important; */
 }
