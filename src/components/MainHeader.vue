@@ -13,13 +13,13 @@
             </a>
           </li>
           <li>
-            <a href="register.php">
+            <router-link :to="{ name: 'Register' }">
               <font-awesome-icon
                 :class="$i18n.locale == 'en' ? 'me-2' : 'ms-2'"
                 :icon="['fas', 'user-plus']"
               ></font-awesome-icon>
               <span>New Member</span>
-            </a>
+            </router-link>
           </li>
         </ul>
         <ul class="social d-flex justify-content-center">

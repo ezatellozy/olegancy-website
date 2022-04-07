@@ -5,14 +5,6 @@ import router from './router'
 import store from './store'
 import '@/style/main.scss'
 
-// import { extend } from 'vee-validate'
-// import * as rules from 'vee-validate/dist/rules'
-// import {
-//   ValidationObserver,
-//   ValidationProvider,
-// } from 'vee-validate/dist/vee-validate.full.esm'
-// import $ from 'jquery'
-
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 
@@ -38,6 +30,7 @@ import i18n from './i18n'
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
+
 // app.component('validation-provider', ValidationProvider)
 // app.component('validation-observer', ValidationObserver)
 
@@ -45,6 +38,7 @@ app.use(i18n)
 
 app.use(BootstrapVue3)
 app.use(store)
+
 app.use(router)
 
 app.mount('#app')

@@ -1,4 +1,5 @@
 <template>
+  <breadcrumb />
   <section class="contact-page container p-t-50 p-b-20">
     <div class="title text-center">
       <h2 class="text-center f-s-35">Get In Touch</h2>
@@ -156,8 +157,10 @@
 </template>
 
 <script>
+import Breadcrumb from '@/components/Breadcrumb.vue'
 export default {
-  name: 'ContactUs',
+  components: { Breadcrumb },
+  name: 'contactUs',
   data() {
     return {
       email: '',

@@ -1,5 +1,7 @@
 @import './animate.scss';
 @import './my-style.scss';
+@import './solid.scss';
+
 body {
   font-family: 'Cairo', sans-serif;
 }
@@ -140,85 +142,61 @@ li {
   }
 }
 
-// // .inner-header {
-// //   background: url(../images/intro.jpg) fixed center no-repeat;
-// //   background-size: cover;
-// //   height: 250px;
-// //   padding-top: 100px;
-// // }
-// .breadcrumb {
-//   background-color: transparent;
-// }
-// .breadcrumb-item {
-//   font-size: 17px;
-// }
-// .breadcrumb-item a {
-//   color: white;
-// }
-// .breadcrumb-item.active {
-//   color: white;
-// }
-// .breadcrumb-item + .breadcrumb-item::before {
-//   color: white;
-// }
-// .breadcrumb-title {
-//   font-size: 40px;
-// }
-// .pagination {
-//   padding: 0;
-// }
-// .page-link {
-//   color: #303f9f;
-// }
-// .page-item:hover .page-link,
-// .page-item:active .page-link {
-//   color: white;
-//   background-color: #303f9f;
-// }
-// .image,
-// figure {
-//   width: 100%;
-//   text-align: center;
-//   overflow: hidden;
-// }
+.pagination {
+  padding: 0;
+}
+.page-link {
+  color: #303f9f;
+}
+.page-item:hover .page-link,
+.page-item:active .page-link {
+  color: white;
+  background-color: #303f9f;
+}
+.image,
+figure {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
 .image img,
 figure img {
   max-width: 100%;
   height: auto;
   transition: all 0.6s ease-in-out;
 }
-// /* width */
-// ::-webkit-scrollbar {
-//   width: 10px;
-// }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-// /* Track */
-// ::-webkit-scrollbar-track {
-//   background: #f1f1f1;
-// }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//   background: #ddd;
-// }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
 
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//   background: #555;
-// }
-// .warning {
-//   color: red;
-// }
-// .error .form-control {
-//   border-color: red !important;
-//   border: solid 1px red !important;
-// }
-// .footer-content .warning {
-//   color: white;
-// }
-// .footer-content .error .form-control {
-//   background-color: rgba(231, 76, 60, 0.5);
-// }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.warning {
+  color: red;
+}
+.error .form-control {
+  border-color: red !important;
+  border: solid 1px red !important;
+}
+.footer-content .warning {
+  color: white;
+}
+.footer-content .error .form-control {
+  background-color: rgba(231, 76, 60, 0.5);
+}
 
 // /*************** Index ****************/
 
@@ -389,147 +367,13 @@ figure img {
 // /*************** Register ****************/
 
 // /*************** Page ****************/
-// .page ul li {
-//   list-style-type: disc;
-// }
-// .page img {
-//   max-width: 100%;
-// }
+.page ul li {
+  list-style-type: disc;
+}
+.page img {
+  max-width: 100%;
+}
 // /*************** Page ****************/
-
-// /*************** Pricing ****************/
-// .pricing .business .box {
-//   border: solid 1px #303f9f;
-//   transition: all 0.4s ease-in-out;
-//   transform: scale(1.05);
-// }
-// .pricing .business .box .title::after {
-//   content: '';
-//   display: block;
-//   width: 80px;
-//   height: 4px;
-//   background-color: #303f9f;
-//   margin: 15px auto 0;
-// }
-// .pricing .business .box:nth-child(2) {
-//   background-color: #303f9f;
-//   color: white;
-//   transform: scale(1);
-// }
-// .pricing .business .box:nth-child(2) .btn {
-//   background-color: white;
-//   color: #303f9f;
-// }
-// .pricing .business .box:nth-child(2) .title::after {
-//   background-color: white;
-// }
-// .pricing .individual .price {
-//   width: 100px;
-//   height: 100px;
-//   border-radius: 50%;
-//   border: solid 1px #303f9f;
-//   margin: 20px auto;
-//   text-align: center;
-//   font-size: 30px;
-//   padding-top: 20px;
-// }
-// .pricing .individual .box .content {
-//   border: solid 2px #f8f9fa;
-//   transition: all 0.4s ease-in-out;
-// }
-// .pricing .individual .box:hover .content {
-//   border: solid 2px #303f9f;
-// }
-// .pricing .box ul.details {
-//   padding: 10px 0;
-// }
-// .pricing .box ul.details li {
-//   margin-bottom: 10px;
-//   display: block;
-//   position: relative;
-// }
-// .pricing .box ul.details li::before {
-//   content: '\f00c';
-//   font-family: FontAwesome;
-//   color: #303f9f;
-// }
-// .pricing .business .box:nth-child(2) ul.details li::before {
-//   color: white;
-// }
-// /* .pricing .individual .box:nth-child(2) , .pricing .individual .box:nth-child(4){
-// 		background-color: #303f9f;
-// 		color: white;
-// 	}
-// 	.pricing .individual .box:nth-child(2) .price , .pricing .individual .box:nth-child(4) .price{
-// 		border: solid 1px white;
-// 	}
-// 	.pricing .individual .box:nth-child(2) .btn , .pricing .individual .box:nth-child(4) .btn{
-// 		background-color: white;
-// 	} */
-
-// /*************** Pricing ****************/
-
-// /*************** Contact ****************/
-// .contact-page ul.social li svg {
-//   color: #303f9f;
-//   font-size: 20px;
-// }
-// .contact-page .address ul li {
-//   margin-bottom: 7px;
-//   font-size: 15px;
-// }
-// .contact-page .address ul li svg {
-//   color: #303f9f;
-// }
-// .contact-page form textarea {
-//   height: 150px;
-// }
-// .contact-page .map iframe {
-//   width: 100%;
-//   height: 350px;
-// }
-// /*************** Contact ****************/
-
-// /************** Archive Books **************/
-// .archive-books figure {
-//   height: 375px;
-//   position: relative;
-// }
-// .archive-books figure .overlay {
-//   position: absolute;
-//   bottom: 0;
-//   background-color: rgba(0, 0, 0, 0.7);
-//   overflow: hidden;
-//   width: 0;
-//   height: 100%;
-//   transition: 0.5s ease;
-// }
-// .archive-books figure:hover .overlay {
-//   width: 100%;
-// }
-// .archive-books figure .overlay .text {
-//   color: white;
-//   font-size: 20px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-//   white-space: nowrap;
-// }
-// .archive-books figure .overlay .text h4 {
-//   white-space: pre-wrap;
-//   line-height: 32px;
-// }
-// .archive-books figure .overlay .text svg {
-//   font-size: 35px;
-//   color: white;
-//   transition: all 0.4s ease-in-out;
-// }
-// .archive-books figure .overlay .text svg:hover {
-//   color: #303f9f;
-// }
-// /************** Archive Books **************/
 
 // /************** Single-Book **************/
 // .single-book .links a.read {
@@ -539,63 +383,46 @@ figure img {
 // }
 // /************** Single-Book **************/
 
-// /************** Legal-Forum **************/
-// .forums .forum-title {
-//   background-color: #999;
-// }
-// .forums .sub-forum {
-//   margin-bottom: 5px;
-//   padding-bottom: 15px;
-//   padding-top: 20px;
-// }
-// .forums .sub-forum:nth-child(odd) {
-//   background-color: #f8f9fa;
-// }
-// .forums .sub-forum svg {
-//   color: #303f9f;
-// }
-// /************** Legal-Forum **************/
+/************** Cat-Forum **************/
+ul.article-info li {
+  display: inline;
+  font-size: 15px;
+}
+ul.article-info li svg {
+  color: #868e96 !important;
+}
+ul.article-info li .like svg {
+  color: green !important;
+}
+ul.article-info li .dislike svg {
+  color: red !important;
+}
+/************** Cat-Forum **************/
 
-// /************** Cat-Forum **************/
-// ul.article-info li {
-//   display: inline;
-//   font-size: 15px;
-// }
-// ul.article-info li svg {
-//   color: #868e96 !important;
-// }
-// ul.article-info li .like svg {
-//   color: green !important;
-// }
-// ul.article-info li .dislike svg {
-//   color: red !important;
-// }
-// /************** Cat-Forum **************/
+/************** Comments **************/
+.comments .comment .user-img {
+  width: 60px;
+  height: 60px;
+}
+.comments .comment .txt {
+  width: 85%;
+}
+.comments .comment .txt p {
+  font-size: 15px;
+}
+.write-comment form {
+  width: 80%;
+}
+.write-comment form textarea {
+  height: 150px;
+}
+/************** Comments **************/
 
-// /************** Comments **************/
-// .comments .comment .user-img {
-//   width: 60px;
-//   height: 60px;
-// }
-// .comments .comment .txt {
-//   width: 85%;
-// }
-// .comments .comment .txt p {
-//   font-size: 15px;
-// }
-// .write-comment form {
-//   width: 80%;
-// }
-// .write-comment form textarea {
-//   height: 150px;
-// }
-// /************** Comments **************/
-
-// /************** Add-Article **************/
-// .add-article form textarea {
-//   height: 130px;
-// }
-// /************** Add-Article **************/
+/************** Add-Article **************/
+.add-article form textarea {
+  height: 130px;
+}
+/************** Add-Article **************/
 
 // /************** Lawer-details **************/
 // .lawyer-details .profile-sec {
@@ -697,38 +524,6 @@ figure img {
 // }
 
 // /************** Lawer-details **************/
-
-// /************** Sidebar **************/
-// .sidebar .add-article {
-//   padding: 20px 10px;
-//   font-size: 20px;
-// }
-// .side-banner img {
-//   max-width: 100%;
-// }
-// .side-topics ul li svg {
-//   color: #303f9f;
-// }
-// .side-topics ul li {
-//   border-bottom: solid 1px #f5f5f5;
-//   padding-bottom: 15px;
-//   margin-bottom: 15px;
-// }
-// .side-topics ul li .num span {
-//   padding: 2px 10px;
-//   position: relative;
-// }
-// .side-topics ul li .num span::after {
-//   content: '';
-//   position: absolute;
-//   top: 23%;
-//   width: 0;
-//   height: 0;
-//   border-top: 10px solid transparent;
-//   border-bottom: 10px solid transparent;
-//   clear: both;
-// }
-// /************** Sidebar **************/
 
 // /************* Responsive *************/
 // @media (max-width: 1024px) {

@@ -5,11 +5,12 @@
   },
   "nav": {
     "brand": "Olegancy",
+    "Register": "Register",
     "home": "Home",
     "contactUs": "Contact us",
     "policies": "Policies",
     "lawFirms": "Law firms",
-    "pricing": "Pricing",
+    "Pricing": "Pricing",
     "legalForums": "Legal forums",
     "bookLibrary": "Book library",
     "aboutUs": "About us"

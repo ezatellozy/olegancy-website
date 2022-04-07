@@ -1,68 +1,63 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid">
-      <div class="links d-flex justify-content-between">
-        <a class="navbar-brand" href="#">
-          <img src="@/assets/images/logo.png" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          id="navbarSupportedContent justify-content-end"
-          class="collapse navbar-collapse"
-        >
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <router-link class="nav-link" to="/">
-                {{ $t('nav.home') }}
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/aboutUs">
-                {{ $t('nav.aboutUs') }}
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/policies">
-                {{ $t('nav.policies') }}
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/lawFirms">
-                {{ $t('nav.lawFirms') }}
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/pricing">
-                {{ $t('nav.pricing') }}
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/legalForums">
-                {{ $t('nav.legalForums') }}
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/bookLibrary">
-                {{ $t('nav.bookLibrary') }}
-              </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'ContactUs' }">
-                {{ $t('nav.contactUs') }}
-              </router-link>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="@/assets/images/logo.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">
+              {{ $t('nav.home') }}
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/aboutUs">
+              {{ $t('nav.aboutUs') }}
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/policies">
+              {{ $t('nav.policies') }}
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/lawFirms">
+              {{ $t('nav.lawFirms') }}
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'Pricing' }">
+              {{ $t('nav.Pricing') }}
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'legalForums' }">
+              {{ $t('nav.legalForums') }}
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'bookLibrary' }">
+              {{ $t('nav.bookLibrary') }}
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'contactUs' }">
+              {{ $t('nav.contactUs') }}
+            </router-link>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -113,17 +108,18 @@ export default {
     }
   }
   .navbar-toggler {
-    border: none;
+    border: transparent !important;
     & > span {
       background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 20, 63, 0.9%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e');
     }
     &:focus {
-      color: #fff !important;
+      color: transparent !important;
+    }
+    &:focus-visible {
+      border: transparent !important;
     }
   }
-  .links {
-    flex: 1;
-  }
+
   .lang {
     width: fit-content;
     .form-select {
